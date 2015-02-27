@@ -129,10 +129,10 @@ function Note(pitch) {
         var note_position = letter.charCodeAt() - 'C'.charCodeAt();
 
         if (note_position < 0) {
-            note_position += 8;
+            note_position += 7;
         }
 
-        var octave_position = 8*(Number(octave) - 4);
+        var octave_position = 7*(Number(octave) - 4);
 
         return octave_position + note_position;
     }
